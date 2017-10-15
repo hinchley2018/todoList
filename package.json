@@ -1,0 +1,20 @@
+{
+  "name": "todo-list",
+  "version": "1.0.0",
+  "description": "Learning Angular SPAs",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hinchley2018/todoList.git"
+  },
+  "author": "Jonathon Hinchley",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hinchley2018/todoList/issues"
+  },
+  "homepage": "https://github.com/hinchley2018/todoList#readme"
+}
