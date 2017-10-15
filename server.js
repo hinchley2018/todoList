@@ -1,11 +1,13 @@
-//setup
-var express = require('express');
-var app = express();
-var mongoose = require('mongoose');
-var morgan = require('morgan');
-var bodyParser = require('body-parser');
-var methodOverride = require('method-override');
-var apiRouter = require('./api')
+//imports
+import express from 'express';
+import mongoose from 'mongoose';
+import morgan from 'morgan';
+import bodyParser from 'body-parser';
+import methodOverride from 'method-override';
+import apiRouter from './api';
+
+const app = express();
+
 
 //config
 //TODO: tutorial isn't letting us use his so we need to replace this
