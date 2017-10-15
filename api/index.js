@@ -17,7 +17,6 @@ router.get('/todos', (req, res) => {
     }
     res.json(todos);
   });
-  res.send({});
 });
 
 //create todo and send back all todos after creation
@@ -41,4 +40,20 @@ router.post('/todos', (req,res) => {
   });
 });
 
+//delete a todo
+router.delete('/todos/:todo_id', (req,res) =>{
+  Todo.remove({
+    _id: req.params.todo_id
+  }, function(err,todo){
+    if(err){
+      res.send(err);
+    }
+    Todo.find((err,todo)=>{
+      if(err){
+        res.send(err);
+      }
+      res.json(todos);
+    });
+  });
+});
 export default router;
