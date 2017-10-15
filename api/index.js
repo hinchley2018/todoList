@@ -1,7 +1,6 @@
 import express from 'express';
 import mongoose from 'mongoose';
 const router = express.Router();
-const mongoose = mongoose();
 
 //define model
 var Todo = mongoose.model('Todo', {
