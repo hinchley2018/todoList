@@ -24,5 +24,8 @@
   "bugs": {
     "url": "https://github.com/hinchley2018/todoList/issues"
   },
-  "homepage": "https://github.com/hinchley2018/todoList#readme"
+  "homepage": "https://github.com/hinchley2018/todoList#readme",
+  "devDependencies": {
+    "babel-core": "^6.26.0"
+  }
 }
