@@ -20,6 +20,11 @@ app.use(bodyParser.json({type:'application/vnd.api+json'}));
 app.use(methodOverride());
 app.use('/api',apiRouter);
 
+// application -------------------------------------------------------------
+app.get('*', function(req, res) {
+    res.sendfile('./public/index.html'); // load the single view file (angular will handle the page changes on the front-end)
+});
+
 //listen
 app.listen(8080); //so its the quick and dirty config huh... naughty tutorial guy
 console.log("TodoList app listening on port 8080");
