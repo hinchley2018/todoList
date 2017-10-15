@@ -1,4 +1,4 @@
-var express = require('express');
+import express from 'express';
 
 const router = express.Router();
 
@@ -6,3 +6,6 @@ const router = express.Router();
 
 //get all todos
 //router.get('/todos')
+
+
+export default router;
