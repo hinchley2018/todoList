@@ -8,8 +8,8 @@ var methodOverride = require('method-override');
 
 
 //config
-//TODO: check if the tutorial guy is letting us use this db
-mongoose.connect('mongodb://node:nodeuser@mongo.onmodulus.net:27017/uwO3mypu');
+//TODO: tutorial isn't letting us use his so we need to replace this
+//mongoose.connect('mongodb://node:nodeuser@mongo.onmodulus.net:27017/uwO3mypu');
 app.use(express.static(__dirname + '/public'));
 app.use(morgan('dev')); //log every request to console
 app.use(bodyParser.urlencoded({'extended':'true'}));
