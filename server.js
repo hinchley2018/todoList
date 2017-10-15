@@ -5,7 +5,7 @@ var mongoose = require('mongoose');
 var morgan = require('morgan');
 var bodyParser = require('body-parser');
 var methodOverride = require('method-override');
-
+var apiRouter = require('./api')
 
 //config
 //TODO: tutorial isn't letting us use his so we need to replace this
@@ -16,6 +16,12 @@ app.use(bodyParser.urlencoded({'extended':'true'}));
 app.use(bodyParser.json());
 app.use(bodyParser.json({type:'application/vnd.api+json'}));
 app.use(methodOverride());
+app.use('/api',apiRouter);
+
+//define model
+var Todo = mongoose.model('Todo', {
+  text: String
+});
 
 //listen
 app.listen(8080); //so its the quick and dirty config huh... naughty tutorial guy
