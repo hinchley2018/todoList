@@ -20,11 +20,6 @@ app.use(bodyParser.json({type:'application/vnd.api+json'}));
 app.use(methodOverride());
 app.use('/api',apiRouter);
 
-//define model
-var Todo = mongoose.model('Todo', {
-  text: String
-});
-
 //listen
 app.listen(8080); //so its the quick and dirty config huh... naughty tutorial guy
 console.log("TodoList app listening on port 8080");
